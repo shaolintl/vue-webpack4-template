@@ -1,7 +1,8 @@
 # vue-webpack4-template
-VueJs template using Webpack 4
+VueJs template using Webpack 4 and yarn
 
-This repository is an implementation of the 'Vue.js and Webpack 4 From Scratch' article series on [itnext.io](https://itnext.io).
+This repository should be used as a template for the VueJS projects in AUP-CS3051 course "Web Applications".
+It is based on a fork of a repository by [Daniel Cook](https://github.com/dfcook/vue-webpack4-template) (Thanks!)-  an implementation of the 'Vue.js and Webpack 4 From Scratch' article series on [itnext.io](https://itnext.io).
 
 [![Build Status](https://travis-ci.com/AUP-CS3051/vue-webpack4-template.svg?branch=master)](https://travis-ci.com/AUP-CS3051/vue-webpack4-template)
 [![codecov](https://codecov.io/gh/AUP-CS3051/vue-webpack4-template/branch/master/graph/badge.svg)](https://codecov.io/gh/AUP-CS3051/vue-webpack4-template)
