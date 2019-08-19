@@ -15,12 +15,13 @@ module.exports = merge(baseConfig, {
     hot: true,
     contentBase: 'dist',
     compress: true,
-    host: HOST,
-    port: PORT,
+    host: '0.0.0.0',
+    port: 8080,
     open: true,
     overlay: { warnings: false, errors: true },
     publicPath: '/',
-    quiet: true
+    quiet: true,
+    disableHostCheck: true
   },
 
   module: {
