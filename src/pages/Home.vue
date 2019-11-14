@@ -26,8 +26,9 @@ export default {
       })
   },
   mounted: function () {
-    if (sessionStorage.email) {
-      this.user = sessionStorage.user
+    let v = sessionStorage.user
+    if (v !== 'undefined') {
+      this.user = JSON.parse(v)
     }
   }
 }
