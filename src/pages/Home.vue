@@ -1,16 +1,34 @@
 <template>
   <div class="full-width center-content">
-    <img src="static/img/logo.png">
-    <WelcomeMessage name="Beautiful World" />
+    <ul>
+      <li
+        v-if="user"
+      >
+        {{ user.name }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import WelcomeMessage from 'components/Home/WelcomeMessage'
 
 export default {
-  components: {
-    WelcomeMessage
+  data: function () {
+    return {
+      user: undefined
+    }
+  },
+  created: function () {
+    fetch('https://api.myjson.com/bins/a3wyt')
+      .then(response => response.json())
+      .then(json => {
+        this.products = json.products
+      })
+  },
+  mounted: function () {
+    if (sessionStorage.email) {
+      this.user = sessionStorage.user
+    }
   }
 }
 </script>

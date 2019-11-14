@@ -19,6 +19,8 @@
   "author": "Daniel Cook",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.4",
     "vue": "^2.6.10",
     "vue-router": "^3.0.2"
   },
