@@ -2,9 +2,10 @@
   <div class="full-width center-content">
     <ul>
       <li
-        v-if="user"
+        v-for="product in products"
+        :key="product.name"
       >
-        {{ user.name }}
+        {{ product.name }}
       </li>
     </ul>
   </div>
@@ -24,12 +25,6 @@ export default {
       .then(json => {
         this.products = json.products
       })
-  },
-  mounted: function () {
-    let v = sessionStorage.user
-    if (v !== 'undefined') {
-      this.user = JSON.parse(v)
-    }
   }
 }
 </script>
